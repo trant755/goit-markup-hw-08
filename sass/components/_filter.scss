@@ -18,7 +18,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   padding: 6px 22px;
 
@@ -27,7 +26,7 @@
     box-shadow 250ms var(--hover-cubic);
   color: var(--text-black);
 
-  background: #f5f4fa;
+  background-color: #f5f4fa;
   border-radius: 4px;
 
   &--active,

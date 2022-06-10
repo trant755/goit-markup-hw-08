@@ -31,56 +31,67 @@
           >Web<span class="logo--black">Studio</span></a
         >
 
-        <nav class="header__navigation">
-          <ul class="list menu">
-            <li class="menu__item">
-              <a class="link menu__link menu__link--active" href="./index.html"
-                >Студия</a
+        <button class="btn mob-menu-btn" type="button">
+          <svg width="40" height="40">
+            <use href="./images/sprite.svg#menu_burger"></use>
+          </svg>
+        </button>
+
+        <div class="header__group">
+          <nav class="header__navigation">
+            <ul class="list menu">
+              <li class="menu__item">
+                <a
+                  class="link menu__link menu__link--active"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+
+              <li class="menu__item">
+                <a class="link menu__link" href="./portfolio.html">Портфолио</a>
+              </li>
+
+              <li class="menu__item">
+                <a class="link menu__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="list contact">
+            <li class="contact__item">
+              <a class="link contact__link" href="mailto:info@devstudio.com">
+                <svg class="contact__icon" width="16" height="12">
+                  <use href="./images/sprite.svg#mail"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
 
-            <li class="menu__item">
-              <a class="link menu__link" href="./portfolio.html">Портфолио</a>
-            </li>
-
-            <li class="menu__item">
-              <a class="link menu__link" href="">Контакты</a>
+            <li class="contact__item">
+              <a class="link contact__link" href="tel:+380961111111">
+                <svg class="contact__icon" width="10" height="16">
+                  <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-
-        <ul class="list contact">
-          <li class="contact__item">
-            <a class="link contact__link" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16" height="12">
-                <use href="./images/sprite.svg#mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-
-          <li class="contact__item">
-            <a class="link contact__link" href="tel:+380961111111">
-              <svg class="contact__icon" width="10" height="16">
-                <use href="./images/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
     <main class="main">
       <!-- Блок Герой -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-
-          <button class="btn btn-open" data-modal-open type="button">
-            Заказать услугу
-          </button>
-          <!-- МОДАЛЬНОЕ ОКНО -->
+          <div class="blas">
+            <button class="btn btn-standart" data-modal-open type="button">
+              Заказать услугу
+            </button>
+          </div>
+          
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="btn btn-close" data-modal-close type="button">
@@ -159,7 +170,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Особенности -->
       <section class="particular">
@@ -227,7 +238,7 @@
       </section>
 
       <!-- Чем мы занимаемся -->
-      <section class="we-do">
+      <!-- <section class="we-do">
         <div class="container">
           <h2 class="we-do__title">Чем мы занимаемся</h2>
 
@@ -263,10 +274,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Наша команда -->
-      <section class="team">
+      <!-- <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
 
@@ -286,7 +297,11 @@
 
                 <ul class="social-list list">
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка instagram">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка instagram"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
@@ -294,7 +309,11 @@
                   </li>
 
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка twitter">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка twitter"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
@@ -302,7 +321,11 @@
                   </li>
 
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка facebook">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка facebook"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
@@ -310,7 +333,11 @@
                   </li>
 
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка linkedin">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка linkedin"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -335,7 +362,11 @@
 
                 <ul class="social-list list">
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка instagram">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка instagram"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
@@ -343,7 +374,11 @@
                   </li>
 
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка twitter">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка twitter"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
@@ -351,7 +386,11 @@
                   </li>
 
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка facebook">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка facebook"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
@@ -359,7 +398,11 @@
                   </li>
 
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка linkedin">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка linkedin"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -384,7 +427,11 @@
 
                 <ul class="social-list list">
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка instagram">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка instagram"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
@@ -392,7 +439,11 @@
                   </li>
 
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка twitter">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка twitter"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
@@ -400,7 +451,11 @@
                   </li>
 
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка facebook">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка facebook"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
@@ -408,7 +463,11 @@
                   </li>
 
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка linkedin">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка linkedin"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -433,7 +492,11 @@
 
                 <ul class="social-list list">
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка instagram">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка instagram"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
@@ -441,7 +504,11 @@
                   </li>
 
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка twitter">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка twitter"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
@@ -449,7 +516,11 @@
                   </li>
 
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка facebook">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка facebook"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
@@ -457,7 +528,11 @@
                   </li>
 
                   <li class="social-list__item">
-                    <a class="social-list__link link" href="" aria-label="иконка linkedin">
+                    <a
+                      class="social-list__link link"
+                      href=""
+                      aria-label="иконка linkedin"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -468,10 +543,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Постояные клиенты -->
-      <section class="clients">
+      <!-- <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
 
@@ -525,11 +600,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Подвал -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
         <div class="logo-address">
           <a class="link logo footer__logo" href="./index.html"
@@ -546,7 +621,9 @@
                 >
               </li>
               <li class="address__contact">
-                <a class="link address__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                <a class="link address__link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -557,7 +634,11 @@
 
           <ul class="social-list list">
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--theme-dark link" href="" aria-label="иконка instagram">
+              <a
+                class="social-list__link social-list__link--theme-dark link"
+                href=""
+                aria-label="иконка instagram"
+              >
                 <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
@@ -565,7 +646,11 @@
             </li>
 
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--theme-dark link" href="" aria-label="иконка twitter">
+              <a
+                class="social-list__link social-list__link--theme-dark link"
+                href=""
+                aria-label="иконка twitter"
+              >
                 <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#twitter"></use>
                 </svg>
@@ -573,7 +658,11 @@
             </li>
 
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--theme-dark link" href="" aria-label="иконка facebook">
+              <a
+                class="social-list__link social-list__link--theme-dark link"
+                href=""
+                aria-label="иконка facebook"
+              >
                 <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
@@ -581,7 +670,11 @@
             </li>
 
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--theme-dark link" href="" aria-label="иконка linkedin">
+              <a
+                class="social-list__link social-list__link--theme-dark link"
+                href=""
+                aria-label="иконка linkedin"
+              >
                 <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#linkedin"></use>
                 </svg>
@@ -598,16 +691,23 @@
               name="mail"
               placeholder="E-mail"
             />
-            <button class="subscribe-form__btn btn" type="submit">
+            <button
+              class="btn-standart btn-standart--add-icon btn"
+              type="submit"
+            >
               Подписаться
-              <svg class="subscribe-form__icon" width="24" height="24">
+              <svg
+                class="subscribe-form__icon btn-standart__icon--end"
+                width="24"
+                height="24"
+              >
                 <use href="./images/sprite.svg#send"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
-    </footer>
-    <script src="./js/modal.js"></script>
+    </footer> -->
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

@@ -1,10 +1,21 @@
 .header {
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 }
 
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.mob-menu-btn {
+  display: block;
+}
+
+.header__group {
+  display: none;
 }
 
 .menu {
