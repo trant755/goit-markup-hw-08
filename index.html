@@ -27,21 +27,23 @@
     <!-- Шапка сайта -->
     <header class="header">
       <div class="container header__container">
-        <a class="link logo" href="./index.html"
-          >Web<span class="logo--black">Studio</span></a
-        >
+        <div class="mobile-header__group">
+          <a class="link logo" href="./index.html"
+            >Web<span class="logo--black">Studio</span></a
+          >
 
-        <button
-          class="btn mob-menu-btn"
-          type="button"
-          aria-label="Кнопка открытия меню"
-        >
-          <svg width="40" height="40">
-            <use href="./images/sprite.svg#menu_burger"></use>
-          </svg>
-        </button>
+          <button
+            class="btn mob-menu-btn"
+            type="button"
+            aria-label="Кнопка открытия меню"
+          >
+            <svg width="40" height="40">
+              <use href="./images/sprite.svg#menu_burger"></use>
+            </svg>
+          </button>
+        </div>
 
-        <div class="header__group">
+        <div class="mobile-menu__group">
           <nav class="header__navigation">
             <ul class="list menu">
               <li class="menu__item">
@@ -62,7 +64,7 @@
             </ul>
           </nav>
 
-          <ul class="list contact">
+          <ul class="list contact header_contact">
             <li class="contact__item">
               <a class="link contact__link" href="mailto:info@devstudio.com">
                 <svg class="contact__icon" width="16" height="12">
