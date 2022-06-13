@@ -27,23 +27,28 @@
     <!-- Шапка сайта -->
     <header class="header">
       <div class="container header__container">
-        <div class="mobile-header__group">
-          <a class="link logo" href="./index.html"
-            >Web<span class="logo--black">Studio</span></a
-          >
+        <a class="link logo" href="./index.html"
+          >Web<span class="logo--black">Studio</span></a
+        >
 
-          <button
-            class="btn mob-menu-btn"
-            type="button"
-            aria-label="Кнопка открытия меню"
-          >
-            <svg width="40" height="40">
-              <use href="./images/sprite.svg#menu_burger"></use>
-            </svg>
-          </button>
-        </div>
+        <button
+          class="btn mob-menu-btn mob-menu-btn--open"
+          data-menu-button
+          type="button"
+        >
+          <svg width="40" height="40" aria-label="Кнопка открытия меню">
+            <use
+              class="mob-menu-btn__icon-burger"
+              href="./images/sprite.svg#menu-burger"
+            ></use>
+            <use
+              class="mob-menu-btn__icon-close"
+              href="./images/sprite.svg#menu-close"
+            ></use>
+          </svg>
+        </button>
 
-        <div class="mobile-menu__group">
+        <div class="mobile-menu__group" data-menu>
           <nav class="header__navigation">
             <ul class="list menu">
               <li class="menu__item">
@@ -64,18 +69,18 @@
             </ul>
           </nav>
 
-          <ul class="list contact header_contact">
+          <ul class="list contact header__contact">
             <li class="contact__item">
-              <a class="link contact__link" href="mailto:info@devstudio.com">
+              <a class="link contact__link header__contact-link--mob-mail" href="mailto:info@devstudio.com">
                 <svg class="contact__icon" width="16" height="12">
                   <use href="./images/sprite.svg#mail"></use>
                 </svg>
                 info@devstudio.com</a
               >
-            </li>
+            </li_>
 
             <li class="contact__item">
-              <a class="link contact__link" href="tel:+380961111111">
+              <a class="link contact__link header__contact-link--mob-tel" href="tel:+380961111111">
                 <svg class="contact__icon" width="10" height="16">
                   <use href="./images/sprite.svg#smartphone"></use>
                 </svg>
@@ -714,6 +719,7 @@
         </div>
       </div>
     </footer> -->
+    <script src="./js/mobile-menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
