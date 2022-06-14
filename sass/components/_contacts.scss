@@ -3,11 +3,19 @@
 }
 
 .contact__item:not(:last-child) {
+  @include mq(mobile-only) {
+    margin-bottom: 32px;
+  }
   @include mq(desktop) {
     margin-right: 30px;
   }
 }
 
+@include mq(mobile-only) {
+  .contact__item:last-child {
+    margin-bottom: 32px;
+  }
+}
 .contact__link {
   display: flex;
   align-items: center;

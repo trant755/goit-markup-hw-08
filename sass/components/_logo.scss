@@ -8,6 +8,10 @@
 
   color: var(--color-accent);
 
+  @include mq(tablet) {
+    margin-right: 83px;
+  }
+
   @include mq(desktop) {
     font-size: 26px;
     line-height: 1.19;
