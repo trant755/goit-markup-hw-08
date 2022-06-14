@@ -7,3 +7,7 @@ body {
 
     color: var(--text-grey);
 }
+
+body.modal-open {
+    overflow: hidden;
+  }

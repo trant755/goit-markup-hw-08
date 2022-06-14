@@ -66,6 +66,10 @@ body {
   color: var(--text-grey);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -737,10 +741,6 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-body.modal-open {
-  overflow: hidden;
 }
 
 .header {
