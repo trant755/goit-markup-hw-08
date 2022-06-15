@@ -71,16 +71,22 @@
 
           <ul class="list contact header__contact">
             <li class="contact__item">
-              <a class="link contact__link header__contact-link--mob-mail" href="mailto:info@devstudio.com">
+              <a
+                class="link contact__link header__contact-link--mob-mail"
+                href="mailto:info@devstudio.com"
+              >
                 <svg class="contact__icon" width="16" height="12">
                   <use href="./images/sprite.svg#mail"></use>
                 </svg>
                 info@devstudio.com</a
               >
-            </li_>
+            </li>
 
             <li class="contact__item">
-              <a class="link contact__link header__contact-link--mob-tel" href="tel:+380961111111">
+              <a
+                class="link contact__link header__contact-link--mob-tel"
+                href="tel:+380961111111"
+              >
                 <svg class="contact__icon" width="10" height="16">
                   <use href="./images/sprite.svg#smartphone"></use>
                 </svg>
@@ -109,7 +115,7 @@
 
     <main class="main">
       <!-- Блок Герой -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <div class="blas">
@@ -117,7 +123,7 @@
               Заказать услугу
             </button>
           </div>
-          
+
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="btn btn-close" data-modal-close type="button">
@@ -196,7 +202,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- Особенности -->
       <section class="particular">
@@ -264,7 +270,7 @@
       </section>
 
       <!-- Чем мы занимаемся -->
-      <!-- <section class="we-do">
+      <section class="we-do">
         <div class="container">
           <h2 class="we-do__title">Чем мы занимаемся</h2>
 
@@ -300,21 +306,76 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Наша команда -->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
 
           <ul class="team__card-list list">
             <li class="team__card">
-              <img
-                src="./images/team/spec-1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/webp/spec-1.webp    1x,
+                    ./images/team/webp/spec@2x-1.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/optim/spec-1.jpg    1x,
+                    ./images/team/optim/spec@2x-1.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/webp/spec-tab-1.webp    1x,
+                    ./images/team/webp/spec-tab@2x-1.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/optim/spec-tab-1.jpg    1x,
+                    ./images/team/optim/spec-tab@2x-1.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    .//images/team/webp/spec-mob-1.webp   1x,
+                    ./images/team/webp/spec-mob@2x-1.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/optim/spec-mob-1.jpg    1x,
+                    ./images/team/optim/spec-mob@2x-1.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__photo"
+                  src="./images/team/spec-1.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                  height="260"
+                />
+              </picture>
 
               <div class="team__card-content">
                 <h3 class="team__card-title">Игорь Демьяненко</h3>
@@ -374,12 +435,67 @@
             </li>
 
             <li class="team__card">
-              <img
-                src="./images/team/spec-2.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/webp/spec-2.webp    1x,
+                    ./images/team/webp/spec@2x-2.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/optim/spec-2.jpg    1x,
+                    ./images/team/optim/spec@2x-2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/webp/spec-tab-2.webp    1x,
+                    ./images/team/webp/spec-tab@2x-2.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/optim/spec-tab-2.jpg    1x,
+                    ./images/team/optim/spec-tab@2x-2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    .//images/team/webp/spec-mob-2.webp   1x,
+                    ./images/team/webp/spec-mob@2x-2.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/optim/spec-mob-2.jpg    1x,
+                    ./images/team/optim/spec-mob@2x-2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__photo"
+                  src="./images/team/spec-2.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                  height="260"
+                />
+              </picture>
 
               <div class="team__card-content">
                 <h3 class="team__card-title">Ольга Репина</h3>
@@ -439,12 +555,67 @@
             </li>
 
             <li class="team__card">
-              <img
-                src="./images/team/spec-3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/webp/spec-3.webp    1x,
+                    ./images/team/webp/spec@2x-3.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/optim/spec-3.jpg    1x,
+                    ./images/team/optim/spec@2x-3.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/webp/spec-tab-3.webp    1x,
+                    ./images/team/webp/spec-tab@2x-3.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/optim/spec-tab-3.jpg    1x,
+                    ./images/team/optim/spec-tab@2x-3.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    .//images/team/webp/spec-mob-3.webp   1x,
+                    ./images/team/webp/spec-mob@2x-3.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/optim/spec-mob-3.jpg    1x,
+                    ./images/team/optim/spec-mob@2x-3.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__photo"
+                  src="./images/team/spec-3.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                  height="260"
+                />
+              </picture>
 
               <div class="team__card-content">
                 <h3 class="team__card-title">Николай Тарасов</h3>
@@ -504,12 +675,67 @@
             </li>
 
             <li class="team__card">
-              <img
-                src="./images/team/spec-4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/webp/spec-4.webp    1x,
+                    ./images/team/webp/spec@2x-4.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/optim/spec-4.jpg    1x,
+                    ./images/team/optim/spec@2x-4.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для планшетних екранів -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/webp/spec-tab-4.webp    1x,
+                    ./images/team/webp/spec-tab@2x-4.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/optim/spec-tab-4.jpg    1x,
+                    ./images/team/optim/spec-tab@2x-4.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Набір зображень для мобільних екранів -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    .//images/team/webp/spec-mob-4.webp   1x,
+                    ./images/team/webp/spec-mob@2x-4.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/optim/spec-mob-4.jpg    1x,
+                    ./images/team/optim/spec-mob@2x-4.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="team__photo"
+                  src="./images/team/spec-4.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                  height="260"
+                />
+              </picture>
 
               <div class="team__card-content">
                 <h3 class="team__card-title">Михаил Ермаков</h3>
@@ -569,10 +795,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Постояные клиенты -->
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
 
@@ -626,13 +852,13 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Подвал -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
-        <div class="logo-address">
+        <div class="footer__element logo-address">
           <a class="link logo footer__logo" href="./index.html"
             >Web<span class="logo--white">Studio</span></a
           >
@@ -641,7 +867,7 @@
             <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
 
             <ul class="address__conatacts list">
-              <li class="address__cantact">
+              <li class="address__contact">
                 <a class="address__link link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
@@ -655,7 +881,7 @@
           </address>
         </div>
 
-        <div class="social-box">
+        <div class="footer__element social-box">
           <h3 class="social-box__title">присоединяйтесь</h3>
 
           <ul class="social-list list">
@@ -708,7 +934,7 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
+        <div class="footer__element subscribe">
           <p class="subscribe__label">Подпишитесь на рассылку</p>
           <form class="subscribe-form">
             <input
@@ -733,8 +959,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script src="./js/mobile-menu.js"></script>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>

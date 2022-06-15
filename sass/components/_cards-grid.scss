@@ -1,15 +1,27 @@
 .cards-list {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .card {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc(100% / 3 - 30px);
+  @include mq(mobile-only) {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  @include mq(mobile) {
+    width: 450px;
+  }
+  @include mq(tablet) {
+    margin: 15px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @include mq(desktop) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .card__link {

@@ -6,8 +6,30 @@
 
 .footer__container {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include mq(desktop) {
+  }
+  @include mq(desktop) {
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.footer__element {
+  @include mq(not-desktop) {
+    text-align: center;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+
+  @include mq(tablet-only) {
+    width: 50%;
+  }
 }
 
 .footer__logo {
@@ -25,7 +47,7 @@
 }
 
 .address__contact:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address__link {

@@ -1,11 +1,12 @@
-
-
 .header {
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
 
   border-bottom: 1px solid #ececec;
+
+  @include mq(mobile-only) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .header__container {
@@ -64,6 +65,7 @@
 
   @include mq(tablet) {
     align-items: center;
+    width: 100%;
   }
 }
 
@@ -93,15 +95,6 @@
 .menu__link {
   display: block;
 
-  @include mq(mobile-only) {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-  }
-
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -109,6 +102,17 @@
   transition: color 250ms var(--hover-cubic);
 
   color: var(--text-black);
+
+  @include mq(mobile-only) {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+  @include mq(tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   &:hover,
   &:focus {
@@ -138,14 +142,18 @@
 }
 
 .header__contact {
-  flex-direction: column-reverse;
-
   @include mq(mobile-only) {
+    flex-direction: column-reverse;
     margin-top: auto;
   }
 
   @include mq(tablet) {
+    flex-direction: column;
     margin-left: auto;
+  }
+
+  @include mq(desktop) {
+    flex-direction: row;
   }
 }
 
@@ -190,10 +198,10 @@
 
   &:not(:last-child)::after {
     content: "";
+    margin-left: 10px;
     height: 100%;
     width: 0px;
     border-left: 1px solid rgba(33, 33, 33, 0.2);
-    // background-color: rgba(33, 33, 33, 0.2);
   }
 }
 

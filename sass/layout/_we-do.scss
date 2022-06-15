@@ -1,6 +1,10 @@
 .we-do {
   padding-top: 47px;
   padding-bottom: 94px;
+
+  @include mq(not-desktop) {
+    display: none;
+  }
 }
 
 .we-do__title {

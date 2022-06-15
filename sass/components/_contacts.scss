@@ -6,6 +6,9 @@
   @include mq(mobile-only) {
     margin-bottom: 32px;
   }
+  @include mq(tablet-only) {
+    margin-bottom: 10px;
+  }
   @include mq(desktop) {
     margin-right: 30px;
   }
