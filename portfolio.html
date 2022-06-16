@@ -27,50 +27,74 @@
     <!-- Шапка сайта -->
     <header class="header">
       <div class="container header__container">
-        <a class="link logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
-    
-        <button class="btn mob-menu-btn mob-menu-btn--open" data-menu-button type="button">
+        <a class="link logo" href="./index.html"
+          >Web<span class="logo--black">Studio</span></a
+        >
+
+        <button
+          class="btn mob-menu-btn mob-menu-btn--open"
+          data-menu-button
+          type="button"
+        >
           <svg width="40" height="40" aria-label="Кнопка открытия меню">
-            <use class="mob-menu-btn__icon-burger" href="./images/sprite.svg#menu-burger"></use>
-            <use class="mob-menu-btn__icon-close" href="./images/sprite.svg#menu-close"></use>
+            <use
+              class="mob-menu-btn__icon-burger"
+              href="./images/sprite.svg#menu-burger"
+            ></use>
+            <use
+              class="mob-menu-btn__icon-close"
+              href="./images/sprite.svg#menu-close"
+            ></use>
           </svg>
         </button>
-    
+
         <div class="mobile-menu__group" data-menu>
           <nav class="header__navigation">
             <ul class="list menu">
               <li class="menu__item">
-                <a class="link menu__link menu__link--active" href="./index.html">Студия</a>
+                <a class="link menu__link" href="./index.html">Студия</a>
               </li>
-    
+
               <li class="menu__item">
-                <a class="link menu__link" href="./portfolio.html">Портфолио</a>
+                <a
+                  class="link menu__link menu__link--active"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
               </li>
-    
+
               <li class="menu__item">
                 <a class="link menu__link" href="">Контакты</a>
               </li>
             </ul>
           </nav>
-    
+
           <ul class="list contact header__contact">
             <li class="contact__item">
-              <a class="link contact__link header__contact-link--mob-mail" href="mailto:info@devstudio.com">
+              <a
+                class="link contact__link header__contact-link--mob-mail"
+                href="mailto:info@devstudio.com"
+              >
                 <svg class="contact__icon" width="16" height="12">
                   <use href="./images/sprite.svg#mail"></use>
                 </svg>
-                info@devstudio.com</a>
-              </li_>
-    
+                info@devstudio.com</a
+              >
+            </li>
+
             <li class="contact__item">
-              <a class="link contact__link header__contact-link--mob-tel" href="tel:+380961111111">
+              <a
+                class="link contact__link header__contact-link--mob-tel"
+                href="tel:+380961111111"
+              >
                 <svg class="contact__icon" width="10" height="16">
                   <use href="./images/sprite.svg#smartphone"></use>
                 </svg>
-                +38 096 111 11 11</a>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-    
+
           <ul class="list mobile-menu__social-list">
             <li class="mobile-menu__social-item">
               <a class="link mobile-menu__social-link" href="">Instagram</a>
@@ -123,11 +147,65 @@
             <li class="card">
               <a class="card__link link" href="">
                 <div class="card__overlay-box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio/card-1.jpg"
-                    alt="Технокряк"
-                  />
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/webp/card-1.webp    1x,
+                        ./images/portfolio/webp/card@2x-1.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/optim/card-1.jpg    1x,
+                        ./images/portfolio/optim/card@2x-1.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/webp/card-tab-1.webp    1x,
+                        ./images/portfolio/webp/card-tab@2x-1.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/optim/card-tab-1.jpg    1x,
+                        ./images/portfolio/optim/card-tab@2x-1.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/webp/card-mob-1.webp    1x,
+                        ./images/portfolio/webp/card-mob@2x-1.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/optim/card-mob-1.jpg    1x,
+                        ./images/portfolio/optim/card-mob@2x-1.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/optim/card-1.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -144,11 +222,64 @@
             <li class="card">
               <a class="card__link link" href="">
                 <div class="card__overlay-box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio/card-2.jpg"
-                    alt="постер"
-                  />
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/webp/card-2.webp    1x,
+                        ./images/portfolio/webp/card@2x-2.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/optim/card-2.jpg    1x,
+                        ./images/portfolio/optim/card@2x-2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/webp/card-tab-2.webp    1x,
+                        ./images/portfolio/webp/card-tab@2x-2.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/optim/card-tab-2.jpg    1x,
+                        ./images/portfolio/optim/card-tab@2x-2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/webp/card-mob-2.webp    1x,
+                        ./images/portfolio/webp/card-mob@2x-2.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/optim/card-mob-2.jpg    1x,
+                        ./images/portfolio/optim/card-mob@2x-2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/optim/card-2.jpg"
+                      alt="постер"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -165,11 +296,64 @@
             <li class="card">
               <a class="card__link link" href="">
                 <div class="card__overlay-box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio/card-3.jpg"
-                    alt="ресторан"
-                  />
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/webp/card-3.webp    1x,
+                        ./images/portfolio/webp/card@2x-3.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/optim/card-3.jpg    1x,
+                        ./images/portfolio/optim/card@2x-3.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/webp/card-tab-3.webp    1x,
+                        ./images/portfolio/webp/card-tab@2x-3.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/optim/card-tab-3.jpg    1x,
+                        ./images/portfolio/optim/card-tab@2x-3.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/webp/card-mob-3.webp    1x,
+                        ./images/portfolio/webp/card-mob@2x-3.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/optim/card-mob-3.jpg    1x,
+                        ./images/portfolio/optim/card-mob@2x-3.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/optim/card-3.jpg"
+                      alt="ресторан"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -186,11 +370,64 @@
             <li class="card">
               <a class="card__link link" href="">
                 <div class="card__overlay-box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio/card-4.jpg"
-                    alt="проект prime"
-                  />
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/webp/card-4.webp    1x,
+                        ./images/portfolio/webp/card@2x-4.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/optim/card-4.jpg    1x,
+                        ./images/portfolio/optim/card@2x-4.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/webp/card-tab-4.webp    1x,
+                        ./images/portfolio/webp/card-tab@2x-4.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/optim/card-tab-4.jpg    1x,
+                        ./images/portfolio/optim/card-tab@2x-4.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/webp/card-mob-4.webp    1x,
+                        ./images/portfolio/webp/card-mob@2x-4.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/optim/card-mob-4.jpg    1x,
+                        ./images/portfolio/optim/card-mob@2x-4.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/optim/card-4.jpg"
+                      alt="проект prime"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -207,11 +444,64 @@
             <li class="card">
               <a class="card__link link" href="">
                 <div class="card__overlay-box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio/card-5.jpg"
-                    alt="проект boxes"
-                  />
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/webp/card-5.webp    1x,
+                        ./images/portfolio/webp/card@2x-5.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/optim/card-5.jpg    1x,
+                        ./images/portfolio/optim/card@2x-5.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/webp/card-tab-5.webp    1x,
+                        ./images/portfolio/webp/card-tab@2x-5.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/optim/card-tab-5.jpg    1x,
+                        ./images/portfolio/optim/card-tab@2x-5.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/webp/card-mob-5.webp    1x,
+                        ./images/portfolio/webp/card-mob@2x-5.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/optim/card-mob-5.jpg    1x,
+                        ./images/portfolio/optim/card-mob@2x-5.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/optim/card-5.jpg"
+                      alt="проект boxes"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -228,11 +518,64 @@
             <li class="card">
               <a class="card__link link" href="">
                 <div class="card__overlay-box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio/card-6.jpg"
-                    alt="Inspiration has no borders"
-                  />
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/webp/card-6.webp    1x,
+                        ./images/portfolio/webp/card@2x-6.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/optim/card-6.jpg    1x,
+                        ./images/portfolio/optim/card@2x-6.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/webp/card-tab-6.webp    1x,
+                        ./images/portfolio/webp/card-tab@2x-6.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/optim/card-tab-6.jpg    1x,
+                        ./images/portfolio/optim/card-tab@2x-6.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/webp/card-mob-6.webp    1x,
+                        ./images/portfolio/webp/card-mob@2x-6.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/optim/card-mob-6.jpg    1x,
+                        ./images/portfolio/optim/card-mob@2x-6.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/optim/card-6.jpg"
+                      alt="Inspiration has no borders"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -249,11 +592,64 @@
             <li class="card">
               <a class="card__link link" href="">
                 <div class="card__overlay-box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio/card-7.jpg"
-                    alt="Limited edition"
-                  />
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/webp/card-7.webp    1x,
+                        ./images/portfolio/webp/card@2x-7.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/optim/card-7.jpg    1x,
+                        ./images/portfolio/optim/card@2x-7.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/webp/card-tab-7.webp    1x,
+                        ./images/portfolio/webp/card-tab@2x-7.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/optim/card-tab-7.jpg    1x,
+                        ./images/portfolio/optim/card-tab@2x-7.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/webp/card-mob-7.webp    1x,
+                        ./images/portfolio/webp/card-mob@2x-7.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/optim/card-mob-7.jpg    1x,
+                        ./images/portfolio/optim/card-mob@2x-7.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/optim/card-7.jpg"
+                      alt="Limited edition"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -270,11 +666,64 @@
             <li class="card">
               <a class="card__link link" href="">
                 <div class="card__overlay-box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio/card-8.jpg"
-                    alt="проект LAB"
-                  />
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/webp/card-8.webp    1x,
+                        ./images/portfolio/webp/card@2x-8.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/optim/card-8.jpg    1x,
+                        ./images/portfolio/optim/card@2x-8.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/webp/card-tab-8.webp    1x,
+                        ./images/portfolio/webp/card-tab@2x-8.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/optim/card-tab-8.jpg    1x,
+                        ./images/portfolio/optim/card-tab@2x-8.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/webp/card-mob-8.webp    1x,
+                        ./images/portfolio/webp/card-mob@2x-8.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/optim/card-mob-8.jpg    1x,
+                        ./images/portfolio/optim/card-mob@2x-8.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/optim/card-8.jpg"
+                      alt="проект LAB"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -291,11 +740,64 @@
             <li class="card">
               <a class="card__link link" href="">
                 <div class="card__overlay-box">
-                  <img
-                    class="card__img"
-                    src="./images/portfolio/card-9.jpg"
-                    alt="Growing business"
-                  />
+                  <picture>
+                    <!-- Набір зображень для десктопних екранів -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/webp/card-9.webp    1x,
+                        ./images/portfolio/webp/card@2x-9.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/optim/card-9.jpg    1x,
+                        ./images/portfolio/optim/card@2x-9.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для планшетних екранів -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/webp/card-tab-9.webp    1x,
+                        ./images/portfolio/webp/card-tab@2x-9.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/optim/card-tab-9.jpg    1x,
+                        ./images/portfolio/optim/card-tab@2x-9.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Набір зображень для мобільних екранів -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/webp/card-mob-9.webp    1x,
+                        ./images/portfolio/webp/card-mob@2x-9.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/optim/card-mob-9.jpg    1x,
+                        ./images/portfolio/optim/card-mob@2x-9.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/portfolio/optim/card-9.jpg"
+                      alt="Growing business"
+                    />
+                  </picture>
                   <p class="card__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -317,52 +819,74 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__element logo-address">
-          <a class="link logo footer__logo" href="./index.html">Web<span class="logo--white">Studio</span></a>
-    
+          <a class="link logo footer__logo" href="./index.html"
+            >Web<span class="logo--white">Studio</span></a
+          >
+
           <address class="address">
             <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
-    
+
             <ul class="address__conatacts list">
               <li class="address__contact">
-                <a class="address__link link" href="mailto:info@example.com">info@example.com</a>
+                <a class="address__link link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
               </li>
               <li class="address__contact">
-                <a class="link address__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                <a class="link address__link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
-    
+
         <div class="footer__element social-box">
           <h3 class="social-box__title">присоединяйтесь</h3>
-    
+
           <ul class="social-list list">
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--theme-dark link" href="" aria-label="иконка instagram">
+              <a
+                class="social-list__link social-list__link--theme-dark link"
+                href=""
+                aria-label="иконка instagram"
+              >
                 <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-    
+
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--theme-dark link" href="" aria-label="иконка twitter">
+              <a
+                class="social-list__link social-list__link--theme-dark link"
+                href=""
+                aria-label="иконка twitter"
+              >
                 <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-    
+
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--theme-dark link" href="" aria-label="иконка facebook">
+              <a
+                class="social-list__link social-list__link--theme-dark link"
+                href=""
+                aria-label="иконка facebook"
+              >
                 <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-    
+
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--theme-dark link" href="" aria-label="иконка linkedin">
+              <a
+                class="social-list__link social-list__link--theme-dark link"
+                href=""
+                aria-label="иконка linkedin"
+              >
                 <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#linkedin"></use>
                 </svg>
@@ -373,10 +897,22 @@
         <div class="footer__element subscribe">
           <p class="subscribe__label">Подпишитесь на рассылку</p>
           <form class="subscribe-form">
-            <input class="subscribe-form__input" type="email" name="mail" placeholder="E-mail" />
-            <button class="btn-standart btn-standart--add-icon btn" type="submit">
+            <input
+              class="subscribe-form__input"
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+            />
+            <button
+              class="btn-standart btn-standart--add-icon btn"
+              type="submit"
+            >
               Подписаться
-              <svg class="subscribe-form__icon btn-standart__icon--end" width="24" height="24">
+              <svg
+                class="subscribe-form__icon btn-standart__icon--end"
+                width="24"
+                height="24"
+              >
                 <use href="./images/sprite.svg#send"></use>
               </svg>
             </button>
@@ -385,6 +921,5 @@
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
-
   </body>
 </html>
