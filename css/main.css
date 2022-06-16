@@ -580,7 +580,7 @@ body.modal-open {
 .subscribe-form__input {
   display: block;
   padding: 15px 16px;
-  width: 358px;
+  width: 100%;
   -webkit-transition: border-color 250ms var(--hover-cubic);
   transition: border-color 250ms var(--hover-cubic);
   color: var(--white);
