@@ -21,7 +21,6 @@
   @include mq(desktop) {
     font-size: 36px;
     line-height: 1.16;
-  
   }
 }
 
@@ -42,7 +41,10 @@
 
   @include mq(mobile-only) {
     max-width: 100%;
-    margin-bottom: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @include mq(mobile) {

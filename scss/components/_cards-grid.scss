@@ -1,4 +1,8 @@
 .cards-list {
+  @include mq(mobile-only) {
+    margin-top: 40px;
+  }
+
   @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;

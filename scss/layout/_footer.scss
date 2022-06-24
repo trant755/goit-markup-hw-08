@@ -10,8 +10,6 @@
   justify-content: center;
 
   @include mq(desktop) {
-  }
-  @include mq(desktop) {
     align-items: baseline;
     justify-content: space-between;
   }

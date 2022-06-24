@@ -32,6 +32,7 @@
     margin-bottom: 20px;
   }
   @include mq(desktop) {
+    width: 358px;
     margin-right: 12px;
   }
 }

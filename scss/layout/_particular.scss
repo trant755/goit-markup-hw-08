@@ -19,7 +19,10 @@
 .particular__card {
   @include mq(mobile-only) {
     max-width: 100%;
-    margin-bottom: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @include mq(mobile) {
